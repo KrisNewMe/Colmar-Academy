@@ -1,0 +1,176 @@
+html {
+    
+    background-color: #f9f7f6f2;
+    font-family: sans-serif;
+}
+header {
+    margin: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+
+}
+.title {
+    display: flex;
+    align-items: center;
+}
+.titleBold {
+    font-size: 24px;
+    font-weight: 700;
+    color: #282c37;
+}
+.titleThin {
+    font-size: 24px;
+    font-weight: 300;
+    color: #aaa;
+}
+
+a{
+    color:#30A9DE;
+    text-decoration: none;  
+}
+.onCampus, .online {
+  margin-right: 16px;
+}
+.logo {
+    width: 24px;
+}
+.one-box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d7d7d7;
+}
+.two-girls-studying{
+    width: 60%;
+    margin: 32px 24px;
+    background-size: cover;
+}
+.text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.text-box h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #464a57;
+    
+}
+.text-box p{
+    font-size: 18px;
+    color: #464a57;
+    margin: 16px 0;
+}
+.start-here{
+    background-color: #282c37;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 48px;
+    padding: 0 8px;
+}
+.second-section{
+    display:flex;
+
+    
+}
+
+.left-side p, .left-side h5{
+    font-size: 18px;
+    color: #464a57;
+    margin: 24px 0px;
+
+}
+.man-reading {
+    width: 100%;
+    display: flex;
+    height: auto;
+  
+}
+.three-boxes {
+    width: 80%;
+  
+}
+.box1, .box2{
+    border: 1px solid #d7d7d7;
+    height: 200px;
+    margin-bottom: 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.box3 {
+    border: 1px solid #d7d7d7;
+    height: 200px;
+    margin-bottom: 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d7d7d7;
+}
+.box1-img, .box2-img, .box3-img {
+    width: 35%;
+    height: auto;
+    display:block;
+    justify-content: flex-start;
+    margin-left: 16px;
+  
+}
+.box1, .box2, .box3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box1-text, .box2-text, .box3-text {
+    margin-left: 16px;
+    font-size: 18px;
+    color: #757882;
+}
+.third-section {
+background-color: #d7d7d7;
+    grid-column: full-start / full-end;
+    margin: 32px 72px;
+}
+.third-section h1 {
+    display:flex;
+    justify-content: center;
+    padding: 32px 0;
+}
+/* 1. Parent Container: Creates the 3x2 grid */
+.container-cards {
+  display: grid;
+  /* Automatically forces 3 equal columns */
+  grid-template-columns: repeat(3, 1fr); 
+  /* Spacing between the cards */
+  gap: 24px; 
+  width: 100%;
+  margin-top: 20px; /* Optional: adds space below the <h1> */
+  
+}
+
+/* 2. Individual Cards: Centers text below the images */
+.container-cards .box {
+  display: flex;
+  flex-direction: column; /* Stacks image on top, text on bottom */
+  align-items: center;    /* Centers text horizontally under the image */
+  gap: 12px; 
+  color: #464a57; 
+  background-color: #f9f7f6;; /* Space between the bottom of the image and text */
+}
+.container-cards .box h5 p {
+    color: #757882;
+}
+
+/* 3. Image Formatting: Ensures uniform sizes */
+.container-cards .box img {
+  display: block;
+  width: 100%;            /* Fills the entire width of the grid column */
+  height: 220px;          /* Sets a consistent height for all images */
+  object-fit: cover;      /* Crops photos cleanly so they don't stretch */
+  border-radius: 6px;     /* Optional: Rounds the corners slightly */
+}
