@@ -95,7 +95,6 @@ a {
 .second-section {
     display: flex;
 
-
 }
 
 .left-side p,
@@ -126,6 +125,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .box3 {
@@ -136,6 +136,7 @@ a {
     align-items: center;
     justify-content: center;
     background-color: #d7d7d7;
+    overflow: hidden;
 }
 
 .box1-img,
@@ -306,8 +307,8 @@ a {
     font-size: 18px;
     color: #757882;
 }
-/* header*/
-header {
+/* footer*/
+footer {
     margin: 0 24px;
     display: flex;
     justify-content: space-between;
@@ -330,4 +331,75 @@ header {
     color: black;
     
 }
+/* --- IPHONE & MOBILE RESPONSIVE OVERRIDES --- */
+@media screen and (max-width: 56.25em  ) {
+  
+  /* Make sure images and videos do not expand past the phone edge */
+  img, video {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Stacks top header items vertically */
+  header {
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 10px;
+  }
+  
+  header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* Hero Section */
+  .one-box {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text-box {
+    padding: 20px 15px;
+    text-align: center;
+  }
+
+  /* Second Section: Stacks layout side-by-side elements */
+  .second-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-side, .three-boxes {
+    width: 100% !important;
+  }
+  
+  /* Third Section: Makes your grid items sit cleanly in 1 column */
+  .container-cards {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  /* Fourth Section: Stacks layout side-by-side elements */
+  .fourth-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video-side, .two-boxes {
+    width: 100% !important;
+  }
+
+  /* Clean up bottom footer navigation */
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+  }
+}
+
 

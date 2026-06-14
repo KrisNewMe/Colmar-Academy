@@ -21,6 +21,7 @@
             <a class="signIn" href="#">Sign in</a>
         </nav>
     </header>
+
     <section>
         <div class="one-box">
             <img class="two-girls-studying" src="../resources/img/banner.jpg" alt="Two girls studying">
@@ -29,14 +30,14 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <button class="start-here">Start here</button>
             </div>
+        </div> <!-- FIXED: Added missing closing div tag here -->
     </section>
+
     <section class="second-section">
         <div class="left-side">
             <img class="man-reading" src="../resources/img/information-main.jpg" alt="Man reading">
             <h3>It doesn't hurt to keep practicing</h3>
-            <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo voluptatibus in amet cum, dolor corporis
-                nihil eum eos optio, quam facere reprehenderit iste quis maxime esse maiores veritatis molestias
-                tenetur."</p>
+            <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo voluptatibus in amet cum, dolor corporis nihil eum eos optio, quam facere reprehenderit iste quis maxime esse maiores veritatis molestias tenetur."</p>
             <h5>Emanuel, Sr Strategist at Hiring.com</h5>
         </div>
         <div class="three-boxes">
@@ -66,6 +67,7 @@
             </div>
         </div>
     </section>
+
     <section class="third-section">
         <h1>Start learning</h1>
         <div class="container-cards">
@@ -80,8 +82,7 @@
                 <div class="card__content">
                     <h2 class="heading-4">Computer art</h2>
                     <h5 class="card__h5 heading-5">COURSES</h5>
-                    <p class="card__text">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects,
-                        Computer Animation</p>
+                    <p class="card__text">Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
                 </div>
             </a>
             <a href="#" class="box"><img src="../resources/img/camera.jpg" alt="Camera icon">
@@ -114,14 +115,12 @@
             </a>
         </div>
     </section>
+
     <section class="fourth-section">
         <div class="video-side">
             <video controls class="house-video" src="../resources/img/block with holes.mp4" alt="House video"></video>
             <h3>It doesn't hurt to keep practicing</h3>
-            <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo voluptatibus in amet cum, dolor corporis
-                nihil eum eos optio, quam facere reprehenderit iste quis maxime esse maiores veritatis molestias
-                tenetur."</p>
-
+            <p> "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo voluptatibus in amet cum, dolor corporis nihil eum eos optio, quam facere reprehenderit iste quis maxime esse maiores veritatis molestias tenetur."</p>
         </div>
         <div class="two-boxes">
             <div class="last-box1">
@@ -141,23 +140,18 @@
                 </div>
             </div>
         </div>
-        </div>
-        </div>
+        <!-- FIXED: Removed two stray extra closing div tags here -->
     </section>
-    <footer>
 
-        <p></p>
-    </footer>
-    <header>
+    <!-- FIXED: Combined footer container and removed improper extra header tag -->
+    <footer>
         <div class="footer-title">
             <p> &copy; 2016 Colmar Academy. All rights reserved.</p>
         </div>
-        <nav>
+        <nav class="footer-nav">
             <a class="terms" href="#">Terms</a>
             <a class="privacy" href="#">Privacy</a>
-
         </nav>
-    </header>
+    </footer>
 </body>
-
 </html>
